@@ -1,6 +1,0 @@
-class Startscreen {
-  
-  void display(){
-    
-  }
-}
