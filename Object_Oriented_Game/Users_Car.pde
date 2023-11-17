@@ -36,7 +36,7 @@ class userCar {
       carSpeed += 10; //make the car speed positive since its moving right
     }
   }
-}
+
 
 //allow the player to steer the car left and right in the road
 void keyPressed() {
@@ -45,4 +45,5 @@ void keyPressed() {
   } else if (key == 'd' || key == 'D' || keyCode == RIGHT) { //if the 'd' key is pressed stter car to the right
     steerRight = true;
   }
+}
 }
