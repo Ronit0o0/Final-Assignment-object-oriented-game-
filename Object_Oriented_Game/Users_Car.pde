@@ -11,6 +11,13 @@ class userCar {
   float carx;
   float cary;
 
+  color carcolour = color(255, 0, 0);
+  color carcolour1 = color(255, 0, 0);
+  color carcolour2 = color(0, 255, 0);
+  color carcolour3 = color(0, 0, 255);
+  color carcolour4 = color(255, 0, 255);
+
+
   userCar(float x, float y) {
     carx = x;
     cary = y;
@@ -19,7 +26,7 @@ class userCar {
     //draw users car
     //draw red body of the car
     noStroke();
-    fill(250, 0, 0);
+    fill(carcolour);
     rect(carx + 5, cary + 0, 40, 80);
     //draw hood of car
     noStroke();
@@ -41,7 +48,7 @@ class userCar {
     if (steerRight == true) { //steer right
       carx = carx + carSpeedright; //make the car speed positive since its moving right
     }
-    carx = constrain(carx, 55,295);
+    carx = constrain(carx, 55, 295);
   }
 
 
@@ -52,21 +59,25 @@ class userCar {
     } else if (key == 'd' || key == 'D' || keyCode == RIGHT) { //if the 'd' key is pressed stter car to the right
       steerRight = true;
     }
-    switch(key){
-     case '1':
-     //add carcolour varible here
-     break;
-     
-     case '2':
-     //add carcolour varible here
-     break;
-     
-     case '3':
-     //add carcolour varible here
-     break;
+    switch(key) {
+    case '1':
+      carcolour = carcolour1;
+      break;
+
+    case '2':
+      carcolour = carcolour2;
+      break;
+
+    case '3':
+      carcolour = carcolour3;
+      break;
+
+    case '4':
+      carcolour = carcolour4;
+      break;
     }
-    
   }
+
 
   void keyReleased(char key) {
     if (key == 'a' || key == 'A' || keyCode == LEFT) { //if the 'a' key is pressed steer car to the left
@@ -79,11 +90,14 @@ class userCar {
   boolean carCrash(obstacleCar collider) {
     if (collider.location.x >= carx && collider.location.x <= carx + 40 && collider.location.y >= cary && collider.location.y <= cary + 80) {
       return true;
-    }  if (collider.location.x + 40 >= carx && collider.location.x + 40 <= carx + 40 && collider.location.y >= cary && collider.location.y <= cary + 80) {
+    }
+    if (collider.location.x + 40 >= carx && collider.location.x + 40 <= carx + 40 && collider.location.y >= cary && collider.location.y <= cary + 80) {
       return true;
-    }  if (collider.location.x >= carx && collider.location.x <= carx + 40 && collider.location.y + 80 >= cary && collider.location.y + 80 <= cary + 80) {
+    }
+    if (collider.location.x >= carx && collider.location.x <= carx + 40 && collider.location.y + 80 >= cary && collider.location.y + 80 <= cary + 80) {
       return true;
-    }  if (collider.location.x + 40 >= carx && collider.location.x + 40 <= carx + 40 && collider.location.y + 80 >= cary && collider.location.y + 80 <= cary + 80) {
+    }
+    if (collider.location.x + 40 >= carx && collider.location.x + 40 <= carx + 40 && collider.location.y + 80 >= cary && collider.location.y + 80 <= cary + 80) {
       return true;
     }
     return false;

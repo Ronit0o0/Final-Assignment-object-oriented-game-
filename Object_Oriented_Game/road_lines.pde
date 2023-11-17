@@ -5,7 +5,7 @@ class roadLines {
   //variables for the lines on the road
 
 
-  //creat efloat for the x location of the line to make it easier to place
+  //create float for the x location of the line to make it easier to place
   float locaX;
 
   //create constructer
