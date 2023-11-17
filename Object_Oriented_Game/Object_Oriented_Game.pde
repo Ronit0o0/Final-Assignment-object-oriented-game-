@@ -2,6 +2,7 @@ Lossscreen lossscreen;
 userCar usercar;
 obstacleCar obstaclecar;
 Startscreen startscreen;
+Clouds clouds;
 
 void setup() {
   size(400, 400);
@@ -9,11 +10,13 @@ void setup() {
   usercar = new userCar();
   obstaclecar = new obstacleCar();
   startscreen = new Startscreen();
+  clouds = new Clouds();
 }
 
 void draw() {
-  lossscreen.display();
+  //lossscreen.display();
   //usercar.display();
   //obstaclecar.display();
   //startscreen.display();
+  clouds.display();
 }
