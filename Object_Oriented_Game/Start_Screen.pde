@@ -2,7 +2,7 @@
 class Startscreen {
 
   void display() {
-    //display the title of the game 
+    //display the title of the game
     textSize(40);
     stroke(0);
     fill(130, 30, 10);
@@ -12,8 +12,5 @@ class Startscreen {
     stroke(0);
     fill(115, 10, 10);
     text("press 'spacebar' to start game", 100, 250);
-   
-    
-    }
   }
-   
+}

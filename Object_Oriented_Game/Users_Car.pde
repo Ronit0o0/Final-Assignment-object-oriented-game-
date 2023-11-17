@@ -1,7 +1,7 @@
 //variables for players car to move
 boolean steerRight;
 boolean steerLeft;
-float carSpeed = 0;
+float carSpeed = 1;
 
 
 //create class for the users/players car

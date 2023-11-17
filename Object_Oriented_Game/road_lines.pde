@@ -2,22 +2,20 @@ class roadLines {
 
   //variables for the lines on the road
   float linePos1 = 0;
-  float linePos2 = 40;
-  float linePos3 = 80;
-  float linePos4 = 120;
-  float linePos5 = 160;
-  float linePos6 = 200;
-  float linePos7 = 240;
-  float linePos8 = 280;
-  float linePos9 = 320;
-  float linePos10 = 360;
-  float linePos11 = 400;
-  float linePos12 = 440;
-  float linePos13 = 480;
-  float linePos14 = 520;
-  float linePos15 = 560;
+  float linePos2 = 50;
+  float linePos3 = 100;
+  float linePos4 = 150;
+  float linePos5 = 200;
+  float linePos6 = 250;
+  float linePos7 = 300;
+  float linePos8 = 350;
+  float linePos9 = 400;
+  float linePos10 = -50;
+  float linePos11 = -100;
+  float linePos12 = -160;
 
-  //creat efloat for the x location of the line ti make it easier to place
+
+  //creat efloat for the x location of the line to make it easier to place
   float locaX;
 
   //create constructer
@@ -41,9 +39,6 @@ class roadLines {
     rect(locaX, linePos10, 2, 30);
     rect(locaX, linePos11, 2, 30);
     rect(locaX, linePos12, 2, 30);
-    rect(locaX, linePos13, 2, 30);
-    rect(locaX, linePos14, 2, 30);
-    rect(locaX, linePos15, 2, 30);
   }
 
   void updateroadLines() {
@@ -57,57 +52,44 @@ class roadLines {
     linePos8=linePos8+5;
     linePos9=linePos9+5;
     linePos10=linePos10+5;
-    linePos11=linePos11+5;
-    linePos12=linePos12+5;
-    linePos13=linePos13+5;
-    linePos14=linePos14+5;
-    linePos15=linePos15+5;
-    
-    if (linePos1>height+50) {
-      linePos1=-50;
-    }
-    if (linePos2>height+50) {
-      linePos2=-50;
-    }
-    if (linePos3>height+50) {
-      linePos3=-50;
-    }
-    if (linePos4>height+50) {
-      linePos4=-50;
-    }
-    if (linePos5>height+50) {
-      linePos5=-50;
-    }
-    if (linePos6>height+50) {
-      linePos6=-50;
-    }
-    if (linePos7>height+50) {
-      linePos7=-50;
-    }
-    if (linePos8>height+50) {
-      linePos8=-50;
-    }
-    if (linePos9>height+50) {
-      linePos9=-50;
-    }
-    if (linePos10>height+50) {
-      linePos10=-50;
+    linePos10=linePos11+5;
+    linePos10=linePos12+5;
 
-      if (linePos11>height+50) {
-        linePos11=-50;
-      }
-      if (linePos12>height+50) {
-        linePos12=-50;
-      }
-       if (linePos13>height+50) {
-        linePos13=-50;
-      }
-       if (linePos14>height+50) {
-        linePos14=-50;
-         if (linePos15>height+50) {
-        linePos15=-50;
-      }
-      }
+    if (linePos1>height+30) {
+      linePos1=-30;
+    }
+    if (linePos2>height+30) {
+      linePos2=-30;
+    }
+    if (linePos3>height+30) {
+      linePos3=-30;
+    }
+    if (linePos4>height+30) {
+      linePos4=-30;
+    }
+    if (linePos5>height+30) {
+      linePos5=-30;
+    }
+    if (linePos6>height+30) {
+      linePos6=-30;
+    }
+    if (linePos7>height+30) {
+      linePos7=-30;
+    }
+    if (linePos8>height+30) {
+      linePos8=-30;
+    }
+    if (linePos9>height+30) {
+      linePos9=-30;
+    }
+    if (linePos10>height+30) {
+      linePos10=-30;
+    }
+    if (linePos11>height+30) {
+      linePos11=-30;
+    }
+    if (linePos12>height+30) {
+      linePos12=-30;
     }
   }
 }
