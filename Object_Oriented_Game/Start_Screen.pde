@@ -12,6 +12,8 @@ class Startscreen {
     stroke(0);
     fill(115, 10, 10);
     text("press 'spacebar' to start game", 100, 250);
+   
+    
+    }
   }
    
-}

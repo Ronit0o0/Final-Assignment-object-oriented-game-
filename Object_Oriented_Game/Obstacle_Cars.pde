@@ -18,4 +18,5 @@ class obstacleCar {
     rect(50, 18, 5, 15);
     rect(50, 70, 5, 15);
   }
-}
+   
+  }
