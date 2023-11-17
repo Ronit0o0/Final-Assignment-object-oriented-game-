@@ -17,10 +17,10 @@ class Clouds {
   void display() {
     ellipseMode(CORNER);
     noStroke();
-    fill(255, 10);
+    fill(255, 150);
     ellipse(-25, 100, 80, 300);
   }
-  void move() {
+  void update() {
     //move cloud vetically
     ypos = ypos + yspeed.y;
     if (ypos > height) {

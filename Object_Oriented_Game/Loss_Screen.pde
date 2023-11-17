@@ -2,7 +2,7 @@
 class Lossscreen {
 
   // colour of background when you lose
-  color backgroundColor = color(150, 0, 0);
+  color backgroundColor = color(120, 0, 0);
 
   void display() {
     //create red sqaures for background when you lose
@@ -15,8 +15,8 @@ class Lossscreen {
       }
     }
     //draw text saying "Game Over"
-    stroke(255);
     fill(0);
+    stroke(255);
     textSize(60);
     text("Game Over", 70, 100);
 

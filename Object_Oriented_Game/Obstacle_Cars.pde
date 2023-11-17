@@ -1,5 +1,13 @@
 class obstacleCar {
-
+  PVector location;
+  
+  //constrcutor
+  obstacleCar(float x, float y){
+  //create variables for the y and x position of the obstacle cars
+  location.x = x;
+  location.y = y;
+  }
+  
   void display() {
     //draw obstacle car
     //draw green body of the car
@@ -17,5 +25,12 @@ class obstacleCar {
     rect(5, 70, 5, 15);
     rect(50, 18, 5, 15);
     rect(50, 70, 5, 15);
+  }
+  
+  void update(){
+    location.y = location.y + 5;
+    if (location.y > height){
+      location.y=random(-500,-70);
+    }
   }
 }
