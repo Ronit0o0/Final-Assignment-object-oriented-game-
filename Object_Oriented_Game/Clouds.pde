@@ -4,16 +4,16 @@ class Clouds {
   //variable to allow clouds to move
   float xpos;
   float ypos;
-  PVector yspeed = new PVector(0,-1);
+  PVector yspeed = new PVector(0, -1);
 
 
   // create constrcutor
   Clouds() {
     xpos = 25;
     ypos = 500;
-    yspeed = new PVector(0,-1);
+    yspeed = new PVector(0, -1);
   }
-  //display clouds 
+  //display clouds
   void display() {
     ellipseMode(CORNER);
     noStroke();

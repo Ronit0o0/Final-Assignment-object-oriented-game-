@@ -31,7 +31,7 @@ class obstacleCar {
     location.y = location.y + 5;
     if (location.y > height) {
       location.y=random(-500, -70);
-      location.x = round(random(1, 4)) * 66.6;
+      location.x = round(random(1, 4)) * 70;
     }
   }
 }
