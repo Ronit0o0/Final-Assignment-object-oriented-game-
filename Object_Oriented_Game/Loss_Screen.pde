@@ -1,4 +1,4 @@
-//create class for loss screen
+ //create class for loss screen
 class Lossscreen {
 
   // colour of background when you lose
