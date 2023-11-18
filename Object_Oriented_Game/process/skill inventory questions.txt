@@ -1,0 +1,32 @@
+﻿19.   
+The for loop is where you set a variable which is then written a line of code to repeat until the value is no longer greater than the number you have put. A while loop is making a loop where you will keep repeating until the line of code is no longer true and it will stop.
+
+
+22.
+The difference between a parameter and argument is the following. Variables are used and defined when the function is a parameter, while instead of variables values are declared within the function if it's an argument.
+
+
+25.
+A class has its own objects within the class it calls on in the main code while an object has its individual properties and is used in the main code instead of a class.
+26.
+A constructor is a function that creates an object and initializes it. And you use it for any custom initialization of the object for example, using the float x and float y in the body and then writing the value inside the constructor to make a custom initialization of the object's location or velocity.
+
+
+27.
+The reason each class should have its own tab is because it makes it easier and more organized to spot the mistake. For example, I created a cloud class and the code told me it was a mistake in the cloud class which narrowed down looking for the line of code. If everything were in the main code it would make it harder to find also each class has its own properties and it's easy to access the tabs as well.
+
+
+31. 
+An array is a fixed list where you cannot take out or add values while the arraylist you can add and remove values from the list with .remove commande.
+
+
+32. 
+The reason you might want to reverse in an array could be for checking if the values are all getting hit also maybe you might want to start of creating 
+smoke particles and can go from highest number to lowest number and create a smooth animation.
+
+
+37.
+PVector makes it easier to make a global variable for position overall instead of creating an a x and a y value for position of an object and velocity makes it easier because you set a fixed range to have for the object.
+
+
+42. The normalize function basically makes it so you take a length from maybe the position PVector and make it a length of 1 to then calculate the distance from one object to the other if needed in the code.
